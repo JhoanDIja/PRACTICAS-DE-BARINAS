@@ -1,0 +1,7 @@
+Algoritmo nombre
+time_t sec =0
+Escribir 'Cuantos segundos quieres calcular? '
+Leer sec
+struct tm *gm_time = gmtime&sec
+Escribir ' hora   minutos   segundos', gm_time->tm_hour,gm_time->tm_min,gm_time->tm_sec
+FinAlgoritmo

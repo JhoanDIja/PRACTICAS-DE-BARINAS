@@ -1,0 +1,22 @@
+Algoritmo nombre
+Escribir 'introduzca los coeficientes a, b y c: '
+Leer lf lf lfabc
+discriminante = powb,2 - 4 * a * c
+Si (a == 0)
+Escribir 'El coeficiente A no puede valer 0'
+SiNo
+Si  (discriminante> 0)
+raiz1 = -b + sqrt(discriminante)) / (2 * a
+raiz2 = -b - sqrt(discriminante)) / (2 * a
+Escribir 'PRIMERA RAIZ = .2lf y 2DA = .2lf', raiz1, raiz2
+SiNo Si  (discriminante == 0)
+raiz1 = raiz2 = -b / 2 * a
+Escribir 'raiz = raiz = .2lf', raiz1
+SiNo
+real = -b / 2 * a
+imag = sqrt-discriminante) / (2 * a
+Escribir 'raiz1 = .2lf+.2lfi y raiz2 = .2f-.2fi', real, imag, real, imag
+FinSi
+FinSi
+FinSi
+FinAlgoritmo

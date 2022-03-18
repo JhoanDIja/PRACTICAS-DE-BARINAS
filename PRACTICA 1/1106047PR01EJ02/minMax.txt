@@ -1,0 +1,13 @@
+Algoritmo nombre
+maxMin
+FinAlgoritmo
+SubProceso MAXMIN()
+Escribir 'Digite tres numeros: '
+Leer num
+Para i =1 Hasta  Con Paso 1
+Leer num
+min = num<min? num : min
+max = num > max? num: max
+FinPara
+Escribir 'El minimo es: , maximo es: ', min, max
+FinSubProceso

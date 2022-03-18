@@ -1,0 +1,126 @@
+Algoritmo nombre
+flag = true
+fecha
+validacionFecha
+Si  (flag)
+fnZodiacal
+FinSi
+FinAlgoritmo
+SubProceso FECHA()
+Escribir 'Que ao naciste? ', putcharch[0]
+Leer year
+Escribir 'Que mes naciste? del 1-12'
+Leer month
+Escribir 'Que dia naciste? '
+Leer day
+Escribir '',year
+FinSubProceso
+SubProceso VALIDACIONFECHA()
+Si  ((year < 1900) || (day >31) || (month == 2  y  day >30) || (month == 4  y  day>30) || (month == 6  y  day>30) ||( month == 9  y  day>30)||(month ==11  y  day> 30))
+Escribir 'fecha invalida'
+flag = false
+SiNo
+Si (year %4==0  y  year %100 !=0)
+Escribir 'este es un ao bisiesto ',putcharch[0]
+SiNo
+Escribir 'este no es un ao bisiesto ',putcharch[0]
+FinSi
+FinSi
+FinSubProceso
+SubProceso FNZODIACAL()
+Segun month Hacer
+1:
+Si (day <= 20)
+Escribir 'ERES CAPRICORNIO '
+FinSi
+else ifday>=21Escribir 'ERES ACUARIO '
+Escribir 'ESTAMOS EN INVIERNO'
+2:
+Si  (year % 4 ==0)
+Si  (day > 28 )
+Escribir 'fecha no valida'
+SiNo
+Escribir 'este es un bisiesto '
+Si (day <= 18)
+Escribir 'ERES ACUARIO '
+ifday>=19Escribir 'ERES PISCIS '
+Escribir 'ESTAMOS EN INVIERNO'
+FinSi
+FinSi
+3:
+Si (day <= 20)
+Escribir 'ERES PISCIS '
+FinSi
+else ifday>=21Escribir 'ERES ARIES '
+Si (day>=20)
+Escribir 'ESTAMOS EN PRIMAVERA '
+SiNo
+Escribir 'ESTAMOS EN PRIMAVERA '
+FinSi
+4:
+Si (day <= 20)
+Escribir 'ERES ARIES '
+SiNo
+Escribir 'ERES TAURO '
+Escribir 'ESTAMOS EN PRIMAVERA '
+FinSi
+5:
+Si (day <= 21)
+Escribir 'ERES TAURO '
+SiNo
+Escribir 'ERES GEMINIS '
+FinSi
+6:
+Si (day <= 21)
+Escribir 'ERES GEMINIS '
+SiNo
+Escribir 'ESTAMOS EN PRIMAVERA '
+Escribir 'ESTAMOS EN VERANO '
+FinSi
+7:
+Si (day <= 22)
+Escribir 'ERES CANCER '
+SiNo
+Escribir 'ERES LEO '
+Escribir 'ESTAMOS EN VERANO '
+FinSi
+8:
+Si (day <= 23)
+Escribir 'ERES LEO '
+Escribir 'ESTAMOS EN PRIMAVERA '
+SiNo
+Escribir 'ERES VIRGO '
+FinSi
+9:
+Si (day <= 23)
+Escribir 'ERES VIRGO '
+Escribir 'ESTAMOS EN VERANO '
+SiNo
+Escribir 'ERES LIBRA '
+Escribir 'ESTAMOS EN OTOO ',putcharch[0]
+FinSi
+10:
+Si (day <= 23)
+Escribir 'ERES LIBRA '
+SiNo
+Escribir 'ERES ESCORPION '
+Escribir 'ESTAMOS EN OTOO ',putcharch[0]
+FinSi
+11:
+Si (day <= 22)
+Escribir 'ERES ESCORPION '
+SiNo
+Escribir 'ERES SAGITARIO '
+Escribir 'ESTAMOS EN OTOO ',putcharch[0]
+FinSi
+12:
+Si (day <= 21)
+Escribir 'ERES SAGITARIO '
+Escribir 'ESTAMOS EN OTOO ',putcharch[0]
+SiNo
+Escribir 'ERES CAPRICORNIO '
+Escribir 'ESTAMOS EN INVIERNO '
+FinSi
+default: Escribir 'Mes no existente '
+FinSi
+FinSegun

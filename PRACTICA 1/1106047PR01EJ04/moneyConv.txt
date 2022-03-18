@@ -1,0 +1,23 @@
+Algoritmo nombre
+multiplos
+FinAlgoritmo
+SubProceso MULTIPLOS()
+Escribir 'Digite un numero: '
+Leer num
+Si ((num %2 != 0) y (num %3 != 0) y (num %5 != 0) y (num %7 != 0))
+Escribir 'este numero no es multiplo de ninguno de estos'
+SiNo
+Si (num %2 ==0)
+Escribir 'el numero es multiplo de 2 '
+FinSi
+Si (num % 3 ==0)
+Escribir 'el numero es multiplo de 3'
+FinSi
+Si (num % 5 ==0)
+Escribir 'el numero es multiplo de 5'
+FinSi
+Si (num % 7 ==0)
+Escribir 'el numero es multiplo de 7'
+FinSi
+FinSi
+FinSubProceso

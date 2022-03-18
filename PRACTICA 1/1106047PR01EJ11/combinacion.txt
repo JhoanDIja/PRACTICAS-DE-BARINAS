@@ -1,0 +1,11 @@
+Algoritmo nombre
+Escribir 'Introduzca 3 valores:'
+Leer   abc
+Si  ((a<0)||(b<0)||(c<0))
+Escribir 'No se aceptan valores negativos'
+SiNo
+ifa>=b&&a>=cEscribir 'Combinacion#1'
+ifb>=a&&b>=cEscribir 'Combinacion#2'
+ifc>=b&&c>=aEscribir 'Combinacion#3'
+FinSi
+FinAlgoritmo

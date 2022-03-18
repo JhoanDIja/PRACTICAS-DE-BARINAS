@@ -1,0 +1,5 @@
+Algoritmo nombre
+Escribir 'Cual es la temperatura actual en celsius? '
+Leer celvariableReservadaus
+Escribir 'La temperatura actual en farenheit es: ', farenheit
+FinAlgoritmo

@@ -1,0 +1,14 @@
+inicio
+declarar 'a'
+Escribir 'ESTE PROGRAMA ADMITE NUMEROS POSITIVOS Y NEGATIVOS Y VERIFICA SI SON PAR O IMPAR '
+Escribir 'Digite un numero: '
+leer a
+Si a>=0  y  a % 2 == 0
+Escribir 'El numero es par y es positivo'
+SiNo Si  a>=0  y  a % 2 != 0
+Escribir 'El numero es positivo pero a la vez es impar'
+SiNo Si a<=0  y  a % 2 == 0
+Escribir 'El numero es negativo y a la vez es par'
+SiNo
+Escribir 'El numero es negativo y a la vez es impar'
+Fin

@@ -1,0 +1,40 @@
+Algoritmo nombre
+Escribir 'ESTE PROGRAMA SOLO ADMITE TRES TIPOS DE MONEDAS:  1 DOLARES  2 EUROS  3 YENES'
+Escribir ' Que moneda quieres convertir? '
+Leer moneda
+fnConver
+FinAlgoritmo
+fnConver
+{
+Segun  moneda Hacer
+1:
+Escribir 'Cuantos pesos quieres convertir? '
+Leer peso
+Si ((peso <= 0)||(peso == 0))
+Escribir 'valor invalido'
+SiNo
+peso = peso * dolar
+Escribir 'Usted tiene un total de 0.1f dolares', peso
+FinSi
+2:
+Escribir 'Cuantos pesos quieres convertir? '
+Leer peso
+Si ((peso <= 0)||(peso == 0))
+Escribir 'valor invalido'
+SiNo
+peso = peso * euro
+Escribir 'Usted tiene un total de 0.1f dolares', peso
+FinSi
+3:
+Escribir 'Cuantos pesos quieres convertir? '
+Leer peso
+Si ((peso <= 0)||(peso == 0))
+Escribir 'valor invalido'
+SiNo
+peso = peso * yen
+Escribir 'Usted tiene un total de 0.1f dolares', peso
+FinSi
+De Otro Modo:
+Escribir 'La moneda escrita no esta en el rango de conversiones'
+FinSegun
+}

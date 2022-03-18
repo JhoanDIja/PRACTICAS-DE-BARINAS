@@ -1,0 +1,69 @@
+Algoritmo nombre
+on =true
+fnCapturaValores
+fnValidarDatos
+fnValidarLados
+Si  (on)
+Escribir 'Entraste en el calculo del area  '
+Escribir 'El area del triangulo es: 5.1f ',area
+fnAngulos
+fnClavariableReservadaficacionAngular
+fnClavariableReservadaficacionLateral
+FinSi
+FinAlgoritmo
+SubProceso FNCAPTURAVALORES()
+Escribir 'Valor de lado 1 '
+Leer a
+Escribir 'Valor de lado 2 '
+Leer b
+Escribir 'Valor de lado 3 '
+Leer c
+FinSubProceso
+SubProceso FNVALIDARDATOS()
+Si  ((a<=0) || (b<=0)|| (c<=0))
+Escribir 'Incongruencia en los datos'
+on = false
+FinSi
+FinSubProceso
+SubProceso FNVALIDARLADOS()
+Si  ((a>= (b+c))||(b>= (a+c))||(c>= (b+a)))
+Escribir 'Los lados no conforman un triangulo'
+on = false
+FinSi
+FinSubProceso
+SubProceso FNANGULOS()
+angA = acosf(pow(b,2)+pow(c,2) - pow(a,2))/(2*b*c)*180/PI
+angB = acosf(pow(a,2)+pow(c,2) - pow(b,2))/(2*a*c)*180/PI
+angC = acosf(pow(a,2)+pow(b,2) - pow(c,2))/(2*a*b)*180/PI
+Escribir 'El angulo A es 0.1f   El angulo de B es0.1f   El angulo de C es0.1f  ', angA,angB,angC
+FinSubProceso
+SubProceso FNCLAVARIABLERESERVADAFICACIONANGULAR()
+Escribir 'CLASIFICACION DE ANGULOS  '
+Si ((angA > 0) y (angA < 90))
+Escribir 'Este angulo es agudo: 0.2f  ', angA
+SiNo
+ifangA == 90Escribir 'Este angulo es recto: 0.1f  ', angA
+ifangA>90&&angA<180Escribir 'Este angulo es obtuso: 0.1f  '
+FinSi
+Si ((angB > 0) y (angB < 90))
+Escribir 'Este angulo es agudo: 0.1f ', angB
+SiNo
+ifangB == 90Escribir 'Este angulo es recto: 0.1f ', angB
+ifangB>90&&angB<180Escribir 'Este angulo es obtuso: 0.1f ', angB
+FinSi
+Si ((angC > 0) y (angC < 90))
+Escribir 'Este angulo es agudo: 0.1f ', angA
+SiNo
+ifangC == 90Escribir 'Este angulo es recto: 0.1f ', angC
+ifangC>90&&angC<180Escribir 'Este angulo es obtuso: 0.1f ',angC
+FinSi
+FinSubProceso
+SubProceso FNCLAVARIABLERESERVADAFICACIONLATERAL()
+Escribir 'CLASIFICACION SEGUN SUS LADOS'
+Si ((angA==angB) y (angA == angC))
+Escribir 'El triangulo es Equilatero'
+SiNo
+ifangA,angB,angC>0&&angA,angB,angC < 90Escribir 'El triangulo es Escaleno'
+ifangA > 90||angB>90||angC>90Escribir 'El triangulo es Isosceles'
+FinSi
+FinSubProceso

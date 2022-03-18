@@ -1,0 +1,48 @@
+Algoritmo nombre
+Escribir 'Que asignatura deseas calificar? '
+Escribir '1 Fisica Mecanica  2 LAB FISICA MECANICA  3 Calc. Integral '
+Escribir '4 PROGRAMA HANDS ON 1  5 Dibujo Mecanico I  6 PyD de Algoritmos '
+Leer choice
+Segun  choice Hacer
+1:
+fnGrades
+2:
+fnGrades
+3:
+fnGrades
+4:
+fnGrades
+5:
+fnGrades
+6:
+fnGrades
+De Otro Modo:
+Escribir 'No esta en el rango'
+FinSegun
+FinAlgoritmo
+fnGrades
+{
+Escribir 'Que calificacion quieres otorgar? :'
+Leer grade
+Si (grade < 0)
+Escribir 'Aunque el estudiante se lo merezca no le podemos dar notas negativas'
+SiNo
+Si (grade > 100)
+Escribir 'Tampoco le puedes dar una nota mas alta que 100 aunque lo merezca'
+SiNo
+Si  (grade >= 90)
+Escribir 'La nota otorgada equivale a una A  Puntos acumulados en el trimestre: 4'
+SiNo Si  ((grade>= 85) y (grade <= 89))
+Escribir 'La nota Otorgada equivale a B+  Puntos acumulados en el trimestre: 3.5'
+SiNo Si  ((grade>= 80) y (grade <= 84))
+Escribir 'La nota Otorgada equivale a B  Puntos acumulados en el trimestre: 3'
+SiNo Si  ((grade>= 75) y (grade <= 79))
+Escribir 'La nota Otorgada equivale a C+  Puntos acumulados en el trimestre: 2.5'
+SiNo Si  ((grade>= 70) y (grade <= 74))
+Escribir 'La nota Otorgada equivale a C  Puntos acumulados en el trimestre: 2'
+FinSi
+FinSi
+FinSi
+FinSi
+FinSi
+FinSi
